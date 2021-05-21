@@ -53,8 +53,10 @@ site_H <-biomass_H_p %>%
 
 #individual plots for each site
 pL <- # main= "Site L", xlab="Plot", ylab="Total biomass")
-      ggplot(data=site_L, aes(x=)) + 
+      ggplot(data=site_L, aes(x=plot)) + 
   geom_histogram()
+
+pL <- ggplot(site_L, aes(plot)) + geom_bar() 
 
 pL
 #combine plots 
